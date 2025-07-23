@@ -13,7 +13,7 @@ import pandas as pd
 
 
 
-API_BASE = "https://icu-patient-deterioration-monitor-live-3.onrender.com"
+API_BASE = "http://localhost:8000"
 
 def fetch_latest():
     try:
