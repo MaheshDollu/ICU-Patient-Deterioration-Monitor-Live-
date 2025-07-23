@@ -35,21 +35,15 @@ git clone https://github.com/MaheshDollu/ICU-Patient-Deterioration-Monitor-Live-
 cd ICU-Patient-Deterioration-Monitor-Live-
 
 2. Create and Activate Virtual Environment
-bash
-Copy
-Edit
+
 python -m venv venv
 source venv/bin/activate    # Mac/Linux
 venv\Scripts\activate       # Windows
 3. Install Requirements
-bash
-Copy
-Edit
+
 pip install -r requirements.txt
 4. Run FastAPI Backend
-bash
-Copy
-Edit
+
 cd model_serving
 uvicorn api:app --reload
 The API runs at: http://localhost:8000
@@ -57,25 +51,19 @@ The API runs at: http://localhost:8000
 5. Run Streamlit Dashboard
 In a new terminal:
 
-bash
-Copy
-Edit
+
 streamlit run dashboard.py
 The dashboard will be live at: http://localhost:8501
 
 6. Simulate Live Patient Data
 In another terminal:
 
-bash
-Copy
-Edit
+
 python simulate_patients.py
 Vitals will be sent to the backend every 5 seconds and the dashboard will reflect updates.
 
 📁 Project Structure
-bash
-Copy
-Edit
+
 ICU-Patient-Deterioration-Monitor-Live-/
 ├── model_serving/
 │   ├── api.py              # FastAPI app with ML model
