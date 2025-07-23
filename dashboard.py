@@ -9,7 +9,8 @@ import streamlit as st
 import requests
 import pandas as pd
 
-API_URL = "http://localhost:8000"
+API_URL = "API_URL = "https://icu-patient-deterioration-monitor-live-3.onrender.com"
+
 
 
 API_BASE = "http://localhost:8000"
